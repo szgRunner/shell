@@ -1,7 +1,12 @@
 #!/bin/bash
 
 echo
+echo "# 容器调度平台命令行终端"
 echo "# Run kubectl commands inside here"
 echo "# e.g. kubectl get all"
+echo "# e.g. kubectl get cs"
+echo "# e.g. kubectl -niecas-core get po -owide"
+echo "# e.g. kubectl -niecas-geovis get po -owide"
+echo "# e.g. kubectl -nkube-system get po -owide"
 export TERM=screen-256color
 exec bash
