@@ -17,6 +17,8 @@ RUN echo 'shell:x:1000:1000:shell,,,:/home/shell:/bin/bash' > /etc/passwd && \
     echo '. /etc/profile.d/bash_completion.sh' >> /home/shell/.bashrc && \
     echo 'alias k="kubectl"' >> /home/shell/.bashrc && \
     echo 'alias ks="kubectl -n kube-system"' >> /home/shell/.bashrc && \
+    echo 'alias kc="kubectl -n iecas-core"' >> /home/shell/.bashrc && \
+    echo 'alias kg="kubectl -n iecas-geovis"' >> /home/shell/.bashrc && \
     echo 'source <(kubectl completion bash)' >> /home/shell/.bashrc && \
     echo 'PS1="> "' >> /home/shell/.bashrc && \
     mkdir /home/shell/.kube && \
