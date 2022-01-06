@@ -18,7 +18,7 @@ RUN echo '. /etc/profile.d/bash_completion.sh' >> /root/.bashrc && \
     echo 'alias kg="kubectl -n iecas-geovis"' >> /root/.bashrc && \
     echo 'source <(kubectl completion bash)' >> /root/.bashrc && \
     echo 'PS1="> "' >> /root/.bashrc && \
-    mkdir /root/.kube && \
+    mkdir /root/.kube
 COPY --from=build /kubectl /usr/local/bin/
 COPY package/welcome /usr/local/bin/
 WORKDIR /
